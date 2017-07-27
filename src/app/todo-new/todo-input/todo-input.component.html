@@ -1,0 +1,9 @@
+<header class="header">
+  <h1>todos</h1>
+
+  <form [formGroup]="todoForm"
+        (ngSubmit)="AddTodo()">
+    <input class="new-todo" placeholder="What needs to be done?" autofocus formControlName="text">
+  </form>
+
+</header>

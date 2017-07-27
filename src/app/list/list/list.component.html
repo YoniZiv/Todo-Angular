@@ -1,0 +1,5 @@
+<input class="toggle-all" type="checkbox">
+<label for="toggle-all">Mark all as complete</label>
+<ul class="todo-list" *ngFor="let todo of Todos | async">
+  <app-todo [text]="todo.text" [completed]="todo.completed" [id]="todo.id" ></app-todo>
+</ul>
